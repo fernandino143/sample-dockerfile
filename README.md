@@ -153,3 +153,10 @@ As you can see the Hello message was returned by nginx from the index.html file 
 #### Please check the conf directory for configuration files and pop me an email fssilv@ incase you need assistance.
 
 Hope this helps.
+
+### Next Steps:
+
+Add more information to this README file
+Use this in an ECS example
+Use this in a kubernetes example
+Cloudformation all the content!!!
