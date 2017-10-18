@@ -154,4 +154,4 @@ As you can see the Hello message was returned by nginx from the index.html file 
 
 ####Please check the conf directory for configuration files and pop me an email fssilv@ incase you need assistance.
 
-Hope this helps.# sample-dockerfile
+Hope this helps.
