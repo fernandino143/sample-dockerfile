@@ -79,8 +79,6 @@ These files are organized like the following:
 |   |-- nginx
 |   |   |-- default.conf
 |   |   `-- index.html
-|   |-- script
-|   |   `-- script.sh
 |   `-- service
 |       |-- nginx
 |       |   `-- run
