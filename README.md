@@ -1,4 +1,4 @@
-#Short Description
+# Short Description
 
 
 This small project aims assisting those who seek a better understanding and commonly have issues running "daemonized" images on any kind of orchestrators.
@@ -7,11 +7,11 @@ This small project aims assisting those who seek a better understanding and comm
 2 - Create a small nginx image (10.4 MB in size compared to 108 MB original nginx image from dockerhub)  
 3 - Provide a hands on example of a Dockerfile that you could use in production
 
-###Targeted audience:
+### Targeted audience:
 
 This article aims engineers that already have a minimum knowledge in docker. It doesn't require any orchestrator's (k8 or ecs) knowledge. However it should be used as source for future articles. Minimum Linux understanding.
 
-###The Dockerfile:
+### The Dockerfile:
 
 ```
     FROM alpine
@@ -40,7 +40,7 @@ This article aims engineers that already have a minimum knowledge in docker. It 
     ENTRYPOINT ["/sbin/runsvdir", "-P", "/etc/service"]
 ```
 
-###How It works:
+### How It works:
 
 This image makes use of the alpine linux original image from dockerhu and makes use of the apk package manager.
 
@@ -129,7 +129,7 @@ user@ip-172-31-23-71 Build]$ docker ps
 CONTAINER ID        IMAGE                            COMMAND                  CREATED              STATUS              PORTS                                          NAMES
 e79b18831557        article                          "/sbin/runsvdir -P..."   About a minute ago   Up About a minute   0.0.0.0:37074->22/tcp, 0.0.0.0:37073->80/tcp   hungry_mayer
 ```
-###Let's test it:
+### Let's test it:
 ```
 [ec2-user@ip-172-31-23-71 Build]$ docker port e79b18831557
 22/tcp -> 0.0.0.0:37074
@@ -152,6 +152,6 @@ e79b18831557:~#
 
 As you can see the Hello message was returned by nginx from the index.html file provided inside the conf directory.
 
-####Please check the conf directory for configuration files and pop me an email fssilv@ incase you need assistance.
+#### Please check the conf directory for configuration files and pop me an email fssilv@ incase you need assistance.
 
 Hope this helps.
