@@ -91,7 +91,7 @@ These files are organized like the following:
 
 To build the image, you need to issue the "docker build" command followed by a -t parameter, an image-name and the location. After issuing the command you should se docker creating several intermediate containers (in this example 13 due to multiple commands executed in the Dockerfile) and performing configurations. If the image creation is successful you should see a message like "Successfully built <container-id>". First, let's clone the project:
 ```
-git clone https://github.com/fernandino143/sample-dockerfile.git
+git clone https://github.com/fernandino143/sample-dockerfile
 cd sample-dockerfile
 ```
 And build
